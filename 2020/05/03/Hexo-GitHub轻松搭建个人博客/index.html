@@ -43,8 +43,9 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200502205132785.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200502205054630.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200504165734720.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200504195048694.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-05-03T07:21:55.000Z">
-<meta property="article:modified_time" content="2020-05-04T10:18:10.347Z">
+<meta property="article:modified_time" content="2020-05-04T11:51:44.835Z">
 <meta property="article:author" content="Selience">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200502150015191.png">
@@ -200,7 +201,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-04 18:18:10" itemprop="dateModified" datetime="2020-05-04T18:18:10+08:00">2020-05-04</time>
+                <time title="修改时间：2020-05-04 19:51:44" itemprop="dateModified" datetime="2020-05-04T19:51:44+08:00">2020-05-04</time>
               </span>
 
           
@@ -216,7 +217,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.4k</span>
+              <span>3.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -243,8 +244,6 @@
 </blockquote>
 <p><a href="http://hexo.io" target="_blank" rel="noopener">Hexo官网</a><br><a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">Hexo github地址</a></p>
 <a id="more"></a>
-
-
 
 <ul>
 <li><code>npm install -g hexo-cli</code>  安装hexo</li>
@@ -298,7 +297,7 @@
 <h3 id="修改网站语言"><a href="#修改网站语言" class="headerlink" title="修改网站语言"></a>修改网站语言</h3><blockquote>
 <p>打开站点配置文件，<code>_config.yml</code></p>
 </blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Hexo</span><br><span class="line">subtitle: <span class="string">''</span></span><br><span class="line">description: <span class="string">''</span></span><br><span class="line">keywords:</span><br><span class="line">author: Selience</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: <span class="string">''</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hexo</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">''</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">''</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Selience</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">''</span></span><br></pre></td></tr></table></figure>
 <p>我这里将语言改为了中文，有些教程说改成<code>zh-Hans</code>，但是我改了之后变成了阿拉伯文，最后发现，这里设置的语言，要在你当前使用的皮肤的`languages’文件夹下才行<br><img src="https://img-blog.csdnimg.cn/2020050220580896.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <h3 id="网站底部添加字数统计和阅读统计"><a href="#网站底部添加字数统计和阅读统计" class="headerlink" title="网站底部添加字数统计和阅读统计"></a>网站底部添加字数统计和阅读统计</h3><ul>
 <li><p>安装插件<br><code>npm install hexo-symbols-count-time --save</code></p>
@@ -306,7 +305,7 @@
 <li><p>修改站点配置<br>就是你最开始新建的那个目录下的<code>_config.yml</code>，打开统计开关</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  symbols: true                # 文章字数统计</span><br><span class="line">  time: true                   # 文章阅读时长</span><br><span class="line">  total_symbols: true          # 站点总字数统计</span><br><span class="line">  total_time: true             # 站点总阅读时长</span><br><span class="line">  exclude_codeblock: false     # 排除代码字数统计</span><br></pre></td></tr></table></figure></li>
 <li><p>修改主题配置文件<br><code>themes</code>文件夹下每个文件夹就是一个主题，打开主题文件夹内的<code>_config.yml</code>，找到<code>symbols_count_time</code>选项，没有的话就新建</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Post wordcount display settings</span><br><span class="line"># Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span><br><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true     # 是否另起一行（true的话不和发表时间等同一行）</span><br><span class="line">  item_text_post: true     # 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）</span><br><span class="line">  item_text_total: true   # 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）</span><br><span class="line">  awl: 4                   # Average Word Length</span><br><span class="line">  wpm: 275                 # Words Per Minute（每分钟阅读词数）</span><br><span class="line">  suffix: mins.</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Post wordcount display settings</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span></span><br><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">true</span>     <span class="comment"># 是否另起一行（true的话不和发表时间等同一行）</span></span><br><span class="line">  <span class="attr">item_text_post:</span> <span class="literal">true</span>     <span class="comment"># 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">true</span>   <span class="comment"># 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）</span></span><br><span class="line">  <span class="attr">awl:</span> <span class="number">4</span>                   <span class="comment"># Average Word Length</span></span><br><span class="line">  <span class="attr">wpm:</span> <span class="number">275</span>                 <span class="comment"># Words Per Minute（每分钟阅读词数）</span></span><br><span class="line">  <span class="attr">suffix:</span> <span class="string">mins.</span></span><br></pre></td></tr></table></figure></li>
 <li><p>修改文字描述</p>
 <blockquote>
 <p>就是例如<code>首页</code>、<code>标签</code>、<code>本文字数</code>、<code>阅读时长</code>、<code>发表于</code>等这些文字，如果要修改，就打开当前主题皮肤文件夹下的<code>themes</code>文件夹，打开当前所使用的语言的配置文件，进行修改<br><img src="https://img-blog.csdnimg.cn/20200502210202857.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
@@ -319,9 +318,14 @@
 <h3 id="添加网站访问量、访客量、文章阅读量"><a href="#添加网站访问量、访客量、文章阅读量" class="headerlink" title="添加网站访问量、访客量、文章阅读量"></a>添加网站访问量、访客量、文章阅读量</h3><blockquote>
 <p>我用的<code>next</code>主题版本为<code>7.8.0</code>，内部已经集成了了<code>busuanzi</code>,只需要在主题配置啊文件中开启就可以，打开主题配置文件<code>_config.yml</code>,查找<code>busuanzi_count</code>选项，没有的就新建</p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># Show Views / Visitors of the website / page with busuanzi.</span><br><span class="line"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span><br><span class="line">busuanzi_count:</span><br><span class="line">  enable: true #开启busuanzi统计</span><br><span class="line">  total_visitors: true #总访客数</span><br><span class="line">  total_visitors_icon: fa fa-user</span><br><span class="line">  total_views: true #总访问量</span><br><span class="line">  total_views_icon: fa fa-eye</span><br><span class="line">  post_views: true #文章浏览量</span><br><span class="line">  post_views_icon: fa fa-eye</span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Show Views / Visitors of the website / page with busuanzi.</span></span><br><span class="line"><span class="comment"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span></span><br><span class="line"><span class="attr">busuanzi_count:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment">#开启busuanzi统计</span></span><br><span class="line">  <span class="attr">total_visitors:</span> <span class="literal">true</span> <span class="comment">#总访客数</span></span><br><span class="line">  <span class="attr">total_visitors_icon:</span> <span class="string">fa</span> <span class="string">fa-user</span></span><br><span class="line">  <span class="attr">total_views:</span> <span class="literal">true</span> <span class="comment">#总访问量</span></span><br><span class="line">  <span class="attr">total_views_icon:</span> <span class="string">fa</span> <span class="string">fa-eye</span></span><br><span class="line">  <span class="attr">post_views:</span> <span class="literal">true</span> <span class="comment">#文章浏览量</span></span><br><span class="line">  <span class="attr">post_views_icon:</span> <span class="string">fa</span> <span class="string">fa-eye</span></span><br></pre></td></tr></table></figure>
 
-<p>效果如下<br>                        <img src="https://img-blog.csdnimg.cn/20200504165734720.png" alt="在这里插入图片描述"></p>
+<p>效果如下<br>            <img src="https://img-blog.csdnimg.cn/20200504165734720.png" alt="在这里插入图片描述"></p>
+<h3 id="改变菜单位置"><a href="#改变菜单位置" class="headerlink" title="改变菜单位置"></a>改变菜单位置</h3><blockquote>
+<p><code>首页</code>、<code>归档</code>这两个默认菜单显示位置在最上面，想让其显示在侧边，还是打开主题配置文件<code>_config.yml</code>,找到<code>_config.yml</code>(解构)属性，里面有四种选择自己喜欢的即可！</p>
+</blockquote>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment"># scheme: Muse</span></span><br><span class="line"><span class="comment"># scheme: Mist</span></span><br><span class="line"><span class="comment"># scheme: Pisces</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200504195048694.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p><a href="https://zhuanlan.zhihu.com/p/80142778?from_voters_page=true" target="_blank" rel="noopener">参考文章1—详细教程</a><br><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">参考文章2—详细教程</a><br><a href="https://www.jianshu.com/p/ec2e6c8a1d89" target="_blank" rel="noopener">参考文章3—美化整理</a><br><a href="https://bjtu-hxs.github.io/2018/06/12/leancloud-config/" target="_blank" rel="noopener">参考文章3—每篇文章阅读量统计</a></p>
 
     </div>
@@ -393,7 +397,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Github"><span class="nav-number">1.</span> <span class="nav-text">配置Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到GitHub"><span class="nav-number">2.</span> <span class="nav-text">部署到GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看效果"><span class="nav-number">3.</span> <span class="nav-text">查看效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写一篇博客"><span class="nav-number">4.</span> <span class="nav-text">写一篇博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo常用命令"><span class="nav-number">5.</span> <span class="nav-text">Hexo常用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改网站语言"><span class="nav-number">6.</span> <span class="nav-text">修改网站语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站底部添加字数统计和阅读统计"><span class="nav-number">7.</span> <span class="nav-text">网站底部添加字数统计和阅读统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加网站访问量、访客量、文章阅读量"><span class="nav-number">8.</span> <span class="nav-text">添加网站访问量、访客量、文章阅读量</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Github"><span class="nav-number">1.</span> <span class="nav-text">配置Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到GitHub"><span class="nav-number">2.</span> <span class="nav-text">部署到GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看效果"><span class="nav-number">3.</span> <span class="nav-text">查看效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写一篇博客"><span class="nav-number">4.</span> <span class="nav-text">写一篇博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo常用命令"><span class="nav-number">5.</span> <span class="nav-text">Hexo常用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改网站语言"><span class="nav-number">6.</span> <span class="nav-text">修改网站语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站底部添加字数统计和阅读统计"><span class="nav-number">7.</span> <span class="nav-text">网站底部添加字数统计和阅读统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加网站访问量、访客量、文章阅读量"><span class="nav-number">8.</span> <span class="nav-text">添加网站访问量、访客量、文章阅读量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#改变菜单位置"><span class="nav-number">9.</span> <span class="nav-text">改变菜单位置</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -465,7 +469,7 @@
         <i class="fa fa-chart-area"></i>
       </span>
         <span class="post-meta-item-text">站点总字数：</span>
-      <span title="站点总字数">3k</span>
+      <span title="站点总字数">4k</span>
       <span class="post-meta-divider">|</span>
       <span class="post-meta-item-icon">
         <i class="fa fa-coffee"></i>
