@@ -20,24 +20,23 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="本教程是在已经安装Node、Git、npm，并注册Github账号的前提下进行的，如果以上条件不具备，请查看相关博客文章   Hexo是一个简单、快速、强大的基于 Github Pages 的博客发布工具，支持Markdown格式，有众多优秀插件和主题。  Hexo官网Hexo github地址">
+  <meta name="description" content="本教程是在已经安装Node、Git、npm，并注册Github账号的前提下进行的，如果以上条件不具备，请查看相关博客文章   Hexo是一个简单、快速、强大的基于 Github Pages 的博客发布工具，支持Markdown格式，有众多优秀插件和主题。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+GitHub轻松搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2020/05/03/Hexo-GitHub%E8%BD%BB%E6%9D%BE%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="">
-<meta property="og:description" content="本教程是在已经安装Node、Git、npm，并注册Github账号的前提下进行的，如果以上条件不具备，请查看相关博客文章   Hexo是一个简单、快速、强大的基于 Github Pages 的博客发布工具，支持Markdown格式，有众多优秀插件和主题。  Hexo官网Hexo github地址">
+<meta property="og:description" content="本教程是在已经安装Node、Git、npm，并注册Github账号的前提下进行的，如果以上条件不具备，请查看相关博客文章   Hexo是一个简单、快速、强大的基于 Github Pages 的博客发布工具，支持Markdown格式，有众多优秀插件和主题。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200502150015191.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200502135239916.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200502135646848.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200502142651400.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200502143143716.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200502143430190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200502143623127.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200502144518435.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200502150210757.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200502150015191.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200502151406626.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200502151544796.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200502150210757.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/2020050220580896.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200502210202857.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200502205132785.png">
@@ -45,10 +44,10 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200504165734720.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200504195048694.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-05-03T07:21:55.000Z">
-<meta property="article:modified_time" content="2020-05-04T11:55:30.194Z">
+<meta property="article:modified_time" content="2020-07-15T07:14:00.565Z">
 <meta property="article:author" content="Selience">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200502150015191.png">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200502135646848.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70">
 
 <link rel="canonical" href="http://yoursite.com/2020/05/03/Hexo-GitHub%E8%BD%BB%E6%9D%BE%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
 
@@ -201,7 +200,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-04 19:55:30" itemprop="dateModified" datetime="2020-05-04T19:55:30+08:00">2020-05-04</time>
+                <time title="修改时间：2020-07-15 15:14:00" itemprop="dateModified" datetime="2020-07-15T15:14:00+08:00">2020-07-15</time>
               </span>
 
           
@@ -217,7 +216,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.5k</span>
+              <span>3.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -242,91 +241,102 @@
 <blockquote>
 <p>Hexo是一个简单、快速、强大的基于 Github Pages 的博客发布工具，支持Markdown格式，有众多优秀插件和主题。</p>
 </blockquote>
-<p><a href="http://hexo.io" target="_blank" rel="noopener">Hexo官网</a><br><a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">Hexo github地址</a></p>
 <a id="more"></a>
 
-<ul>
-<li><code>npm install -g hexo-cli</code>  安装hexo</li>
-<li><code>npm install hexo-deployer-git --save</code> 安装用于部署到<code>github</code>的插件</li>
-<li>创建hexo文件夹,以后文章都写在这里面，在文件夹下执行<code>hexo init</code><br><img src="https://img-blog.csdnimg.cn/20200502150015191.png" alt="在这里插入图片描述"></li>
-<li><code>npm install</code>  安装依赖<blockquote>
-<p>此时，基本的<code>Hexo</code>其实已经安装完毕了，并自动生成了一篇示例文章，执行以下命令就可以在本地进行浏览器预览</p>
-</blockquote>
-</li>
-</ul>
-<p><code>hexo g</code> 生成网页，每次进行相应改动都要hexo g 生成一下<br><code>hexo s</code>  启动一个本地服务器，实现本地预览，默认端口4000</p>
-<blockquote>
-<p>执行以上命令之后，hexo就会在public文件夹生成相关html文件，在浏览器地址栏输入<code>localhost:4000</code>,即可预示例文章</p>
-</blockquote>
-<p><img src="https://img-blog.csdnimg.cn/20200502135239916.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h3><ul>
-<li>创建一个仓库，注意下面截图中的红色部分必须是你的用户名，不是昵称–<code>用户名.github.io</code><br><img src="https://img-blog.csdnimg.cn/20200502135646848.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
-<li>配置SSH keys(以前已经配置过的略过)<br><code>ssh-keygen -t rsa -C &quot;注释文字（可以为邮箱或者名字）&quot;</code><br><img src="https://img-blog.csdnimg.cn/20200502142651400.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
-<li>将本地生成的<code>SSH</code>秘钥添加到<code>GitHub</code><blockquote>
-<p>秘钥文件的地址上面的截图中有，默认在<code>C:用户/用户名/.ssh</code>目录下，的<code>id_rsa.pub</code>文件中，用记事本打开该文件，全选复制里面的内容</p>
-</blockquote>
-</li>
-</ul>
+<h3 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h3><h4 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h4><p>创建一个仓库，用于存放博客文章，注意下面截图中的红色部分必须是你的用户名，不是昵称–<code>用户名.github.io</code></p>
+<p><img src="https://img-blog.csdnimg.cn/20200502135646848.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h4 id="生成SSK-Keys-已经配置过的略过"><a href="#生成SSK-Keys-已经配置过的略过" class="headerlink" title="生成SSK Keys(已经配置过的略过)"></a>生成SSK Keys(已经配置过的略过)</h4><p>执行CMD命令<code>ssh-keygen -t rsa -C &quot;注释文字（可以为邮箱或者名字）&quot;</code></p>
+<p><img src="https://img-blog.csdnimg.cn/20200502142651400.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h4 id="将本地生成的SSH秘钥添加到GitHub"><a href="#将本地生成的SSH秘钥添加到GitHub" class="headerlink" title="将本地生成的SSH秘钥添加到GitHub"></a>将本地生成的<code>SSH</code>秘钥添加到<code>GitHub</code></h4><p>秘钥文件的地址上面的截图中有，默认在<code>C:用户/用户名/.ssh</code>目录下，的<code>id_rsa.pub</code>文件中，用记事本打开该文件，全选复制里面的内容</p>
 <p><img src="https://img-blog.csdnimg.cn/20200502143143716.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<blockquote>
 <p>点击你的<code>Github</code>头像，选择<code>Settings</code>,然后选择<code>SSH and GPG keys</code>,最后点击右侧的<code>New SSH key</code>,输入标题，粘贴秘钥，点击确定</p>
-</blockquote>
 <p><img src="https://img-blog.csdnimg.cn/20200502143430190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200502143623127.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<ul>
-<li>验证<br><code>ssh -T git@github.com</code>  如下所示则为成功<br><img src="https://img-blog.csdnimg.cn/20200502144518435.png" alt="在这里插入图片描述"></li>
-<li>完善个人信息，用于<code>Github</code>操作统计，可以不是<code>github</code>的用户名和邮箱</li>
+<h4 id="验证SSH-Keys是否配置成功"><a href="#验证SSH-Keys是否配置成功" class="headerlink" title="验证SSH  Keys是否配置成功"></a>验证SSH  Keys是否配置成功</h4><p>执行CMD命令<code>ssh -T git@github.com</code>  如下所示则为成功</p>
+<p><img src="https://img-blog.csdnimg.cn/20200502144518435.png" alt="在这里插入图片描述"></p>
+<h4 id="完善github个人信息"><a href="#完善github个人信息" class="headerlink" title="完善github个人信息"></a>完善<code>github</code>个人信息</h4><p>执行以下<code>CMD</code>命令,用于<code>Github</code>操作统计，可以不是<code>github</code>的用户名和邮箱</p>
+<p><code>$ git config --global user.name &quot;wuyalan&quot;</code>   输入用户名</p>
+<p><code>$ git config --global user.email  &quot;alan.wyl@foxmail.com&quot;</code>  输入邮箱</p>
+<h3 id="Hexo安装及配置"><a href="#Hexo安装及配置" class="headerlink" title="Hexo安装及配置"></a>Hexo安装及配置</h3><p><a href="http://hexo.io" target="_blank" rel="noopener">Hexo官网</a></p>
+<p><a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">Hexo github地址</a></p>
+<h4 id="全局安装Hexo"><a href="#全局安装Hexo" class="headerlink" title="全局安装Hexo"></a>全局安装Hexo</h4><p><code>npm install -g hexo-cli</code>   </p>
+<h4 id="安装部署插件"><a href="#安装部署插件" class="headerlink" title="安装部署插件"></a>安装部署插件</h4><ul>
+<li>新建一个文件夹，用于存放<code>hexo</code>,我这里创建一个<code>MyBlog</code>文件夹</li>
+<li>执行<code>CMD</code>命令<code>npm init</code>生成一个<code>package.json</code>文件</li>
+<li>执行<code>CMD</code>命令<code>npm install hexo-deployer-git --save</code>安装部署插件</li>
+<li>执行<code>CMD</code>命令<code>npm install</code>  安装依赖</li>
 </ul>
-<p><code>$ git config --global user.name &quot;wuyalan&quot;</code>   输入用户名<br><code>$ git config --global user.email  &quot;alan.wyl@foxmail.com&quot;</code>  输入邮箱</p>
-<h3 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h3><p>在你创hexo文件夹下执行<code>hexo d</code><br><img src="https://img-blog.csdnimg.cn/20200502150210757.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="查看效果"><a href="#查看效果" class="headerlink" title="查看效果"></a>查看效果</h3><blockquote>
-<p>浏览器输入<code>github用户名.github.io</code></p>
-</blockquote>
-<h3 id="写一篇博客"><a href="#写一篇博客" class="headerlink" title="写一篇博客"></a>写一篇博客</h3><blockquote>
-<p>在<code>hexo</code>目录下执行<code>hexo new &#39;my-first-blog&#39;</code></p>
-</blockquote>
+<h4 id="初始化Hexio"><a href="#初始化Hexio" class="headerlink" title="初始化Hexio"></a>初始化Hexio</h4><p>执行<code>CMD</code>命令<code>hexo init</code>，会生成以下文件</p>
+<p><img src="https://img-blog.csdnimg.cn/20200502150015191.png" alt="在这里插入图片描述"></p>
+<!-- + 创建hexo文件夹,以后文章都写在这里面，在文件夹下执行`hexo init`
+
+>此时，基本的`Hexo`其实已经安装完毕了，并自动生成了一篇示例文章，执行以下命令就可以在本地进行浏览器预览
+
+`hexo g` 生成网页，每次进行相应改动都要hexo g 生成一下
+`hexo s`  启动一个本地服务器，实现本地预览，默认端口4000
+>执行以上命令之后，hexo就会在public文件夹生成相关html文件，在浏览器地址栏输入`localhost:4000 `,即可预示例文章
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200502135239916.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70) -->
+
+
+
+<h4 id="写一篇博客"><a href="#写一篇博客" class="headerlink" title="写一篇博客"></a>写一篇博客</h4><p>在<code>MyBlog</code>目录下执行<code>hexo new &#39;my-first-blog&#39;</code></p>
 <p><img src="https://img-blog.csdnimg.cn/20200502151406626.png" alt="在这里插入图片描述"></p>
-<blockquote>
-<p>会在<code>hexo\source\_posts</code>下生成一个<code>.md</code>文件</p>
-</blockquote>
+<p>会在<code>MyBlog\source\_posts</code>下生成一个<code>my-first-blog.md</code>文件</p>
 <p><img src="https://img-blog.csdnimg.cn/20200502151544796.png" alt="在这里插入图片描述"></p>
-<blockquote>
-<p>编辑博客</p>
-</blockquote>
+<p> 打开<code>my-first-blog.md</code>文件编辑博客</p>
 <figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: postName #文章页面上的显示名称，一般是中文</span><br><span class="line">date: <span class="number">2013</span><span class="number">-12</span><span class="number">-02</span> <span class="number">15</span>:<span class="number">30</span>:<span class="number">16</span> #文章生成时间，一般不改，当然也可以任意修改</span><br><span class="line">categories: 默认分类 #分类</span><br><span class="line">tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格</span><br><span class="line">description: 附加一段文章摘要，字数最好在<span class="number">140</span>字以内，会出现在meta的description里面</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">以下是正文</span><br><span class="line">文章，<span class="number">1984</span>年<span class="number">6</span>月<span class="number">26</span>日出生于陕西省西安市，中国内地男演员、导演。<span class="number">2006</span>年毕业于中央戏剧学院表演系。</span><br><span class="line"><span class="number">2004</span>年参演电视剧《与青春有关的日子》，开始在影视圈崭露头角 [<span class="number">1</span>]  。<span class="number">2005</span>年拍摄古装剧《锦衣卫》。<span class="number">2007</span>年主演赵宝刚导演的青春剧《奋斗》； [<span class="number">2</span>]  同年，主演首部电影《走着瞧》。<span class="number">2008</span>年主演滕华涛执导的电视剧《蜗居》，饰演<span class="number">80</span>后城市青年小贝。 [<span class="number">1</span>]  [<span class="number">3</span>]  <span class="number">2009</span>年，在电影《海洋天堂》中扮演自闭症患者王大福；同年参演抗战题材的电视剧《雪豹》 [<span class="number">4</span>]  。<span class="number">2011</span>年，主演的电视剧《裸婚时代》在各大卫视播出； [<span class="number">5</span>]  <span class="number">2011</span>年<span class="number">-2012</span>年连续<span class="number">2</span>年获得北京大学生电影节 [<span class="number">6</span><span class="number">-7</span>]  最受大学生欢迎男演员奖。<span class="number">2012</span>年，凭借电影《失恋<span class="number">33</span>天》获得第<span class="number">31</span>届大众电影百花奖最佳男主角奖； [<span class="number">8</span>]  同年成立自己经营的北京君竹影视文化有限公司，并导演第一部影视作品《小爸爸》。<span class="number">2013</span>年<span class="number">2</span>月，主演的电影《西游·降魔篇》在全国上映。 [<span class="number">9</span>] </span><br><span class="line"><span class="number">2014</span>年<span class="number">3</span>月<span class="number">28</span>日，主演的中韩合资文艺爱情片《我在路上最爱你》在全国上映。<span class="number">2014</span>年<span class="number">12</span>月<span class="number">18</span>日，在姜文执导的动作喜剧片《一步之遥》中扮演武七一角。 [<span class="number">10</span>]  <span class="number">2016</span>年，主演电视剧《少帅》，饰演张学良 [<span class="number">11</span>]  ；主演电视剧《剃刀边缘》 [<span class="number">12</span>]  。<span class="number">7</span>月<span class="number">15</span>日导演的电影《陆垚知马俐》上映。 [<span class="number">13</span>] </span><br><span class="line">演艺事业外，文章也参与公益慈善事业，<span class="number">2010</span>年成立大福自闭症关爱基金。</span><br><span class="line"><span class="number">2017</span>年<span class="number">9</span>月<span class="number">16</span>日，凭借《陆垚知马俐》获得第<span class="number">31</span>届中国电影金鸡奖导演处女作奖 [<span class="number">14</span>]  。</span><br><span class="line"><span class="number">2019</span>年<span class="number">7</span>月<span class="number">28</span>日，文章通过微博宣布，与妻子马伊琍离婚 [<span class="number">15</span>]</span><br></pre></td></tr></table></figure>
-<h3 id="Hexo常用命令"><a href="#Hexo常用命令" class="headerlink" title="Hexo常用命令"></a>Hexo常用命令</h3><p><a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">Hexo常用命令</a></p>
-<h3 id="修改网站语言"><a href="#修改网站语言" class="headerlink" title="修改网站语言"></a>修改网站语言</h3><blockquote>
+<h4 id="生成HTML页面"><a href="#生成HTML页面" class="headerlink" title="生成HTML页面"></a>生成HTML页面</h4><p>每次修改博客后，都要先生成<code>html</code>页面，然后才能本地预览或者部署，执行<code>CMD</code>命令<code>hexo g</code>生成<code>html</code>页面</p>
+<h4 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h4><p>在<code>MyBlog</code>目录下执行命令<code>hexo s</code>,打开浏览器，地址栏输入<code>http://localhost:4000</code>即可本地预览</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">F:\个人\MyBlog&gt;hexo s</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http:&#x2F;&#x2F;localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+
+<h4 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h4><p>在<code>MyBlog</code>目录下执行命令<code>hexo d</code> </p>
+<p><img src="https://img-blog.csdnimg.cn/20200502150210757.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h4 id="查看效果"><a href="#查看效果" class="headerlink" title="查看效果"></a>查看效果</h4><p>打开浏览器，在地址栏输入<code>github用户名.github.io</code></p>
+<h4 id="Hexo常用命令"><a href="#Hexo常用命令" class="headerlink" title="Hexo常用命令"></a>Hexo常用命令</h4><p><a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">Hexo常用命令</a></p>
+<h4 id="修改网站语言"><a href="#修改网站语言" class="headerlink" title="修改网站语言"></a>修改网站语言</h4><blockquote>
 <p>打开站点配置文件，<code>_config.yml</code></p>
 </blockquote>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hexo</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">''</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">''</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Selience</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">''</span></span><br></pre></td></tr></table></figure>
 <p>我这里将语言改为了中文，有些教程说改成<code>zh-Hans</code>，但是我改了之后变成了阿拉伯文，最后发现，这里设置的语言，要在你当前使用主题文件夹下的<code>languages</code>文件夹下才行<br><img src="https://img-blog.csdnimg.cn/2020050220580896.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="网站底部添加字数统计和阅读统计"><a href="#网站底部添加字数统计和阅读统计" class="headerlink" title="网站底部添加字数统计和阅读统计"></a>网站底部添加字数统计和阅读统计</h3><ul>
-<li><p>安装插件<br><code>npm install hexo-symbols-count-time --save</code></p>
-</li>
-<li><p>修改站点配置<br>就是你最开始新建的那个目录下的<code>_config.yml</code>，打开统计开关</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  symbols: true                # 文章字数统计</span><br><span class="line">  time: true                   # 文章阅读时长</span><br><span class="line">  total_symbols: true          # 站点总字数统计</span><br><span class="line">  total_time: true             # 站点总阅读时长</span><br><span class="line">  exclude_codeblock: false     # 排除代码字数统计</span><br></pre></td></tr></table></figure></li>
-<li><p>修改主题配置文件<br><code>themes</code>文件夹下每个文件夹就是一个主题，打开主题文件夹内的<code>_config.yml</code>，找到<code>symbols_count_time</code>选项，没有的话就新建</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Post wordcount display settings</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span></span><br><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">true</span>     <span class="comment"># 是否另起一行（true的话不和发表时间等同一行）</span></span><br><span class="line">  <span class="attr">item_text_post:</span> <span class="literal">true</span>     <span class="comment"># 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">true</span>   <span class="comment"># 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）</span></span><br><span class="line">  <span class="attr">awl:</span> <span class="number">4</span>                   <span class="comment"># Average Word Length</span></span><br><span class="line">  <span class="attr">wpm:</span> <span class="number">275</span>                 <span class="comment"># Words Per Minute（每分钟阅读词数）</span></span><br><span class="line">  <span class="attr">suffix:</span> <span class="string">mins.</span></span><br></pre></td></tr></table></figure></li>
-<li><p>修改文字描述</p>
-<blockquote>
-<p>就是例如<code>首页</code>、<code>标签</code>、<code>本文字数</code>、<code>阅读时长</code>、<code>发表于</code>等这些文字，如果要修改，就打开当前主题文件夹下的<code>themes</code>文件夹，打开当前所使用的语言的配置文件，进行修改<br><img src="https://img-blog.csdnimg.cn/20200502210202857.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-</blockquote>
-</li>
-<li><p>效果<br><img src="https://img-blog.csdnimg.cn/20200502205132785.png" alt="!\[在这里插入图片描述\](https://img-blog.csdnimg.cn/20200502205040160.png"></p>
-</li>
+<h4 id="网站底部添加字数统计和阅读统计"><a href="#网站底部添加字数统计和阅读统计" class="headerlink" title="网站底部添加字数统计和阅读统计"></a>网站底部添加字数统计和阅读统计</h4><ul>
+<li>安装插件</li>
+</ul>
+<p><code>npm install hexo-symbols-count-time --save</code></p>
+<ul>
+<li>修改站点配置</li>
+</ul>
+<p>就是你最开始新建的那个目录下的<code>_config.yml</code>，打开统计开关</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  symbols: true                # 文章字数统计</span><br><span class="line">  time: true                   # 文章阅读时长</span><br><span class="line">  total_symbols: true          # 站点总字数统计</span><br><span class="line">  total_time: true             # 站点总阅读时长</span><br><span class="line">  exclude_codeblock: false     # 排除代码字数统计</span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改主题配置文件</li>
+</ul>
+<p><code>themes</code>文件夹下每个文件夹就是一个主题，打开主题文件夹内的<code>_config.yml</code>，找到<code>symbols_count_time</code>选项，没有的话就新建</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Post wordcount display settings</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span></span><br><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">true</span>     <span class="comment"># 是否另起一行（true的话不和发表时间等同一行）</span></span><br><span class="line">  <span class="attr">item_text_post:</span> <span class="literal">true</span>     <span class="comment"># 首页文章统计数量前是否显示文字描述（本文字数、阅读时长）</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">true</span>   <span class="comment"># 页面底部统计数量前是否显示文字描述（站点总字数、站点阅读时长）</span></span><br><span class="line">  <span class="attr">awl:</span> <span class="number">4</span>                   <span class="comment"># Average Word Length</span></span><br><span class="line">  <span class="attr">wpm:</span> <span class="number">275</span>                 <span class="comment"># Words Per Minute（每分钟阅读词数）</span></span><br><span class="line">  <span class="attr">suffix:</span> <span class="string">mins.</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改文字描述</li>
+</ul>
+<p>就是例如<code>首页</code>、<code>标签</code>、<code>本文字数</code>、<code>阅读时长</code>、<code>发表于</code>等这些文字，如果要修改，就打开当前主题文件夹下的<code>themes</code>文件夹，打开当前所使用的语言的配置文件，进行修改</p>
+<p><img src="https://img-blog.csdnimg.cn/20200502210202857.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ul>
+<li>顶部效果</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/20200502205132785.png" alt="!\[在这里插入图片描述\](https://img-blog.csdnimg.cn/20200502205040160.png"></p>
+<ul>
+<li>底部效果</li>
 </ul>
 <p><img src="https://img-blog.csdnimg.cn/20200502205054630.png" alt="在这里插入图片描述"></p>
-<h3 id="添加网站访问量、访客量、文章阅读量"><a href="#添加网站访问量、访客量、文章阅读量" class="headerlink" title="添加网站访问量、访客量、文章阅读量"></a>添加网站访问量、访客量、文章阅读量</h3><blockquote>
-<p>我用的<code>next</code>主题版本为<code>7.8.0</code>，内部已经集成了了<code>busuanzi</code>,只需要在主题配置啊文件中开启就可以，打开主题配置文件<code>_config.yml</code>,查找<code>busuanzi_count</code>选项，没有的就新建</p>
-</blockquote>
+<h4 id="添加网站访问量、访客量、文章阅读量"><a href="#添加网站访问量、访客量、文章阅读量" class="headerlink" title="添加网站访问量、访客量、文章阅读量"></a>添加网站访问量、访客量、文章阅读量</h4><p>我用的<code>next</code>主题版本为<code>7.8.0</code>，内部已经集成了了<code>busuanzi</code>,只需要在主题配置啊文件中开启就可以，打开主题配置文件<code>_config.yml</code>,查找<code>busuanzi_count</code>选项，没有的就新建</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Show Views / Visitors of the website / page with busuanzi.</span></span><br><span class="line"><span class="comment"># Get more information on http://ibruce.info/2015/04/04/busuanzi</span></span><br><span class="line"><span class="attr">busuanzi_count:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment">#开启busuanzi统计</span></span><br><span class="line">  <span class="attr">total_visitors:</span> <span class="literal">true</span> <span class="comment">#总访客数</span></span><br><span class="line">  <span class="attr">total_visitors_icon:</span> <span class="string">fa</span> <span class="string">fa-user</span></span><br><span class="line">  <span class="attr">total_views:</span> <span class="literal">true</span> <span class="comment">#总访问量</span></span><br><span class="line">  <span class="attr">total_views_icon:</span> <span class="string">fa</span> <span class="string">fa-eye</span></span><br><span class="line">  <span class="attr">post_views:</span> <span class="literal">true</span> <span class="comment">#文章浏览量</span></span><br><span class="line">  <span class="attr">post_views_icon:</span> <span class="string">fa</span> <span class="string">fa-eye</span></span><br></pre></td></tr></table></figure>
 
-<p>效果如下<br>            <img src="https://img-blog.csdnimg.cn/20200504165734720.png" alt="在这里插入图片描述"></p>
-<h3 id="改变菜单位置"><a href="#改变菜单位置" class="headerlink" title="改变菜单位置"></a>改变菜单位置</h3><blockquote>
-<p><code>首页</code>、<code>归档</code>这两个默认菜单显示位置在最上面，想让其显示在侧边，还是打开主题配置文件<code>_config.yml</code>,找到<code>_config.yml</code>(解构)属性，里面有四种选择自己喜欢的即可！</p>
-</blockquote>
+<p>效果如下</p>
+<p><img src="https://img-blog.csdnimg.cn/20200504165734720.png" alt="在这里插入图片描述"></p>
+<h4 id="改变菜单位置"><a href="#改变菜单位置" class="headerlink" title="改变菜单位置"></a>改变菜单位置</h4><p><code>首页</code>、<code>归档</code>这两个默认菜单显示位置在最上面，想让其显示在侧边，还是打开主题配置文件<code>_config.yml</code>,找到<code>_config.yml</code>(解构)属性，里面有四种选择自己喜欢的即可！</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment"># scheme: Muse</span></span><br><span class="line"><span class="comment"># scheme: Mist</span></span><br><span class="line"><span class="comment"># scheme: Pisces</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://img-blog.csdnimg.cn/20200504195048694.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwNTEwMQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><a href="https://zhuanlan.zhihu.com/p/80142778?from_voters_page=true" target="_blank" rel="noopener">参考文章1—详细教程</a><br><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">参考文章2—详细教程</a><br><a href="https://www.jianshu.com/p/ec2e6c8a1d89" target="_blank" rel="noopener">参考文章3—美化整理</a><br><a href="https://bjtu-hxs.github.io/2018/06/12/leancloud-config/" target="_blank" rel="noopener">参考文章3—每篇文章阅读量统计</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/80142778?from_voters_page=true" target="_blank" rel="noopener">参考文章1—详细教程</a></p>
+<p><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">参考文章2—详细教程</a></p>
+<p><a href="https://www.jianshu.com/p/ec2e6c8a1d89" target="_blank" rel="noopener">参考文章3—美化整理</a></p>
+<p><a href="https://bjtu-hxs.github.io/2018/06/12/leancloud-config/" target="_blank" rel="noopener">参考文章3—每篇文章阅读量统计</a></p>
 
     </div>
 
@@ -397,7 +407,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Github"><span class="nav-number">1.</span> <span class="nav-text">配置Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到GitHub"><span class="nav-number">2.</span> <span class="nav-text">部署到GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看效果"><span class="nav-number">3.</span> <span class="nav-text">查看效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写一篇博客"><span class="nav-number">4.</span> <span class="nav-text">写一篇博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo常用命令"><span class="nav-number">5.</span> <span class="nav-text">Hexo常用命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改网站语言"><span class="nav-number">6.</span> <span class="nav-text">修改网站语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站底部添加字数统计和阅读统计"><span class="nav-number">7.</span> <span class="nav-text">网站底部添加字数统计和阅读统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加网站访问量、访客量、文章阅读量"><span class="nav-number">8.</span> <span class="nav-text">添加网站访问量、访客量、文章阅读量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#改变菜单位置"><span class="nav-number">9.</span> <span class="nav-text">改变菜单位置</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Github"><span class="nav-number">1.</span> <span class="nav-text">配置Github</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建仓库"><span class="nav-number">1.1.</span> <span class="nav-text">创建仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#生成SSK-Keys-已经配置过的略过"><span class="nav-number">1.2.</span> <span class="nav-text">生成SSK Keys(已经配置过的略过)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#将本地生成的SSH秘钥添加到GitHub"><span class="nav-number">1.3.</span> <span class="nav-text">将本地生成的SSH秘钥添加到GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#验证SSH-Keys是否配置成功"><span class="nav-number">1.4.</span> <span class="nav-text">验证SSH  Keys是否配置成功</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完善github个人信息"><span class="nav-number">1.5.</span> <span class="nav-text">完善github个人信息</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo安装及配置"><span class="nav-number">2.</span> <span class="nav-text">Hexo安装及配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#全局安装Hexo"><span class="nav-number">2.1.</span> <span class="nav-text">全局安装Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装部署插件"><span class="nav-number">2.2.</span> <span class="nav-text">安装部署插件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化Hexio"><span class="nav-number">2.3.</span> <span class="nav-text">初始化Hexio</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#写一篇博客"><span class="nav-number">2.4.</span> <span class="nav-text">写一篇博客</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#生成HTML页面"><span class="nav-number">2.5.</span> <span class="nav-text">生成HTML页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地预览"><span class="nav-number">2.6.</span> <span class="nav-text">本地预览</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#部署到GitHub"><span class="nav-number">2.7.</span> <span class="nav-text">部署到GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看效果"><span class="nav-number">2.8.</span> <span class="nav-text">查看效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo常用命令"><span class="nav-number">2.9.</span> <span class="nav-text">Hexo常用命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改网站语言"><span class="nav-number">2.10.</span> <span class="nav-text">修改网站语言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网站底部添加字数统计和阅读统计"><span class="nav-number">2.11.</span> <span class="nav-text">网站底部添加字数统计和阅读统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加网站访问量、访客量、文章阅读量"><span class="nav-number">2.12.</span> <span class="nav-text">添加网站访问量、访客量、文章阅读量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#改变菜单位置"><span class="nav-number">2.13.</span> <span class="nav-text">改变菜单位置</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
