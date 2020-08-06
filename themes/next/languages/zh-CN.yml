@@ -71,10 +71,10 @@ symbol:
   period: "。"
   colon: "："
 reward:
-  donate: 打赏
-  wechatpay: 微信支付
+  donate: 鼓励一下
+  wechatpay: 微信
   alipay: 支付宝
-  paypal: 贝宝
+  paypal: 关注我的公众号
   bitcoin: 比特币
 follow_me:
   welcome: 点击下方图标打开二维码，扫描关注我的微信公众号，谢谢支持！
