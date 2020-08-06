@@ -271,15 +271,14 @@ tag_icon: false
 # 酬谢设置
 reward_settings:
   # If true, reward will be displayed in every article by default.
-  enable: false
+  enable: true
   animation: false
-  # comment: "您的支持将鼓励我继续创作,有钱的捧个钱场，没钱的捧个人场，谢谢大家！"
-  #comment: Donate comment here.
+  comment: "坚持手敲原创，您的支持将鼓励我继续创作,有钱的捧个钱场，没钱的捧个人场，谢谢大家！"
 
 # 酬谢二维码
 reward:
-  # wechatpay: /images/wechatpay.png
-  # alipay: /images/alipay.jpg
+  wechatpay: /images/wechatpay.png
+  alipay: /images/alipay.jpg
   #bitcoin: /images/bitcoin.png
 
 # Subscribe through Telegram Channel, Twitter, etc.
@@ -288,7 +287,7 @@ follow_me:
   #Twitter: https://twitter.com/username || fab fa-twitter
   #Telegram: https://t.me/channel_name || fab fa-telegram
   # WeChat: /images/wechat_channel.jpg || fab fa-weixin
-  # WeChat: /images/gongzhonghao.png || fab fa-weixin
+  WeChat: /images/gongzhonghao.png || fab fa-weixin
   #RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
