@@ -9,6 +9,8 @@ tags:
 
 `deploy`意为部署，所以这个目录下的文件就是最后部署到`github`的文件，里面包含生成的`html`页面，以及样式、图片、js等，在执行`hexo d`会将`public`中的文件同步到这个文件夹，然后`.deploy_git`内的文件会被上传到`git`的`master`分支下，这都是在`hexo`配置文件下的`deploy`中配置好的
 
+<!--more-->
+
 + `\source`
 
 这个文件夹下的`_posts`存放的是我们博客源文件，格式为`.md`,在执行`hexo new 我的博客`后就会在这个目录下生成`我的博客.md`
@@ -17,7 +19,7 @@ tags:
 
 + `\public`
 
-这是缓存目录，执行`hexo g`后会生成，`hexo server`启动本地预览就是使用的这里面的文件，
+这是缓存目录，执行`hexo g`后会生成，`hexo server`启动本地预览就是使用的这里面的文件，`.deploy_git`内的文件就是在执行`hexo d`后从`public`中同步过去的
 
 + `\themes\next\languages\zh-CN.yml`
 
